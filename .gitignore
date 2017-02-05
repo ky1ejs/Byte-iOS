@@ -28,8 +28,8 @@ xcuserdata
 *.gcda
 *.gcno
 
-## Carthage
-Carthage/
+## Cocoapods
+Pods/
 
 ## Fastlane
 fastlane/screenshots/
@@ -41,3 +41,6 @@ fastlane/*.html
 
 ## R.swift https://github.com/mac-cain13/R.swift
 *.generated.swift
+
+## Firebase
+GoogleServices-Info.plist

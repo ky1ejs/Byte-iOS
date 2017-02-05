@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C2D8D33431EC0CA46B0364 /* Pods_Byte.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97838B7D6C29914F6E838B6D /* Pods_Byte.framework */; };
 		AFB112D21E47526000F7795C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112D11E47526000F7795C /* AppDelegate.swift */; };
-		AFB112D41E47526000F7795C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112D31E47526000F7795C /* ViewController.swift */; };
+		AFB112D41E47526000F7795C /* DayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112D31E47526000F7795C /* DayTVC.swift */; };
 		AFB112D71E47526000F7795C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB112D51E47526000F7795C /* Main.storyboard */; };
 		AFB112D91E47526000F7795C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB112D81E47526000F7795C /* Assets.xcassets */; };
 		AFB112DC1E47526000F7795C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB112DA1E47526000F7795C /* LaunchScreen.storyboard */; };
+		AFB112E51E4758EF00F7795C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFB112E41E4758EF00F7795C /* GoogleService-Info.plist */; };
+		AFB112E71E4777D000F7795C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112E61E4777D000F7795C /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6773FC981EDF71A1006BBA96 /* Pods-Byte.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Byte.release.xcconfig"; path = "Pods/Target Support Files/Pods-Byte/Pods-Byte.release.xcconfig"; sourceTree = "<group>"; };
+		97838B7D6C29914F6E838B6D /* Pods_Byte.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Byte.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB112CE1E47526000F7795C /* Byte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Byte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB112D11E47526000F7795C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFB112D31E47526000F7795C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFB112D31E47526000F7795C /* DayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTVC.swift; sourceTree = "<group>"; };
 		AFB112D61E47526000F7795C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFB112D81E47526000F7795C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB112DB1E47526000F7795C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFB112DD1E47526000F7795C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB112E41E4758EF00F7795C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFB112E61E4777D000F7795C /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		D3B4CCABD569E3DAE7096F88 /* Pods-Byte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Byte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Byte/Pods-Byte.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C2D8D33431EC0CA46B0364 /* Pods_Byte.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A893C5274A1820C5C1D26A57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97838B7D6C29914F6E838B6D /* Pods_Byte.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFB112C51E47526000F7795C = {
 			isa = PBXGroup;
 			children = (
 				AFB112D01E47526000F7795C /* Byte */,
 				AFB112CF1E47526000F7795C /* Products */,
+				F745F5561EDE5BF5DE8C97A7 /* Pods */,
+				A893C5274A1820C5C1D26A57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				AFB112D11E47526000F7795C /* AppDelegate.swift */,
-				AFB112D31E47526000F7795C /* ViewController.swift */,
+				AFB112D31E47526000F7795C /* DayTVC.swift */,
+				AFB112E61E4777D000F7795C /* Meal.swift */,
 				AFB112D51E47526000F7795C /* Main.storyboard */,
 				AFB112D81E47526000F7795C /* Assets.xcassets */,
 				AFB112E31E4752A800F7795C /* Supporting Files */,
@@ -68,8 +88,18 @@
 			children = (
 				AFB112DA1E47526000F7795C /* LaunchScreen.storyboard */,
 				AFB112DD1E47526000F7795C /* Info.plist */,
+				AFB112E41E4758EF00F7795C /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F745F5561EDE5BF5DE8C97A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3B4CCABD569E3DAE7096F88 /* Pods-Byte.debug.xcconfig */,
+				6773FC981EDF71A1006BBA96 /* Pods-Byte.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFB112E01E47526000F7795C /* Build configuration list for PBXNativeTarget "Byte" */;
 			buildPhases = (
+				14321FFC96F23F6C74B53674 /* [CP] Check Pods Manifest.lock */,
 				AFB112CA1E47526000F7795C /* Sources */,
 				AFB112CB1E47526000F7795C /* Frameworks */,
 				AFB112CC1E47526000F7795C /* Resources */,
+				44F5E2DA2F045CF342FF14C6 /* [CP] Embed Pods Frameworks */,
+				500D33C1330322BBD7EFAE30 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB112DC1E47526000F7795C /* LaunchScreen.storyboard in Resources */,
+				AFB112E51E4758EF00F7795C /* GoogleService-Info.plist in Resources */,
 				AFB112D91E47526000F7795C /* Assets.xcassets in Resources */,
 				AFB112D71E47526000F7795C /* Main.storyboard in Resources */,
 			);
@@ -139,12 +173,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14321FFC96F23F6C74B53674 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		44F5E2DA2F045CF342FF14C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Byte/Pods-Byte-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500D33C1330322BBD7EFAE30 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Byte/Pods-Byte-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFB112CA1E47526000F7795C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFB112D41E47526000F7795C /* ViewController.swift in Sources */,
+				AFB112D41E47526000F7795C /* DayTVC.swift in Sources */,
+				AFB112E71E4777D000F7795C /* Meal.swift in Sources */,
 				AFB112D21E47526000F7795C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +347,7 @@
 		};
 		AFB112E11E47526000F7795C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B4CCABD569E3DAE7096F88 /* Pods-Byte.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Byte/Info.plist;
@@ -276,6 +360,7 @@
 		};
 		AFB112E21E47526000F7795C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6773FC981EDF71A1006BBA96 /* Pods-Byte.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Byte/Info.plist;

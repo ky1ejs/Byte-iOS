@@ -10,11 +10,15 @@
 		11C2D8D33431EC0CA46B0364 /* Pods_Byte.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97838B7D6C29914F6E838B6D /* Pods_Byte.framework */; };
 		AFB112D21E47526000F7795C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112D11E47526000F7795C /* AppDelegate.swift */; };
 		AFB112D41E47526000F7795C /* DayTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112D31E47526000F7795C /* DayTVC.swift */; };
-		AFB112D71E47526000F7795C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB112D51E47526000F7795C /* Main.storyboard */; };
 		AFB112D91E47526000F7795C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB112D81E47526000F7795C /* Assets.xcassets */; };
 		AFB112DC1E47526000F7795C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB112DA1E47526000F7795C /* LaunchScreen.storyboard */; };
 		AFB112E51E4758EF00F7795C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFB112E41E4758EF00F7795C /* GoogleService-Info.plist */; };
 		AFB112E71E4777D000F7795C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112E61E4777D000F7795C /* Meal.swift */; };
+		AFB112E91E47BCD900F7795C /* CreateEditMealVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112E81E47BCD900F7795C /* CreateEditMealVC.swift */; };
+		AFB112EB1E47BD0E00F7795C /* CreateEditMealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112EA1E47BD0E00F7795C /* CreateEditMealView.swift */; };
+		AFB112ED1E47D3EC00F7795C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112EC1E47D3EC00F7795C /* Ingredient.swift */; };
+		AFB112EF1E47D49600F7795C /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112EE1E47D49600F7795C /* DateExtensions.swift */; };
+		AFB112F31E47DE5D00F7795C /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB112F21E47DE5D00F7795C /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +27,16 @@
 		AFB112CE1E47526000F7795C /* Byte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Byte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB112D11E47526000F7795C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB112D31E47526000F7795C /* DayTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTVC.swift; sourceTree = "<group>"; };
-		AFB112D61E47526000F7795C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFB112D81E47526000F7795C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB112DB1E47526000F7795C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFB112DD1E47526000F7795C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB112E41E4758EF00F7795C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AFB112E61E4777D000F7795C /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		AFB112E81E47BCD900F7795C /* CreateEditMealVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEditMealVC.swift; sourceTree = "<group>"; };
+		AFB112EA1E47BD0E00F7795C /* CreateEditMealView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEditMealView.swift; sourceTree = "<group>"; };
+		AFB112EC1E47D3EC00F7795C /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		AFB112EE1E47D49600F7795C /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		AFB112F21E47DE5D00F7795C /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		D3B4CCABD569E3DAE7096F88 /* Pods-Byte.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Byte.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Byte/Pods-Byte.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,8 +83,12 @@
 			children = (
 				AFB112D11E47526000F7795C /* AppDelegate.swift */,
 				AFB112D31E47526000F7795C /* DayTVC.swift */,
+				AFB112E81E47BCD900F7795C /* CreateEditMealVC.swift */,
+				AFB112EA1E47BD0E00F7795C /* CreateEditMealView.swift */,
 				AFB112E61E4777D000F7795C /* Meal.swift */,
-				AFB112D51E47526000F7795C /* Main.storyboard */,
+				AFB112EC1E47D3EC00F7795C /* Ingredient.swift */,
+				AFB112EE1E47D49600F7795C /* DateExtensions.swift */,
+				AFB112F21E47DE5D00F7795C /* JSON.swift */,
 				AFB112D81E47526000F7795C /* Assets.xcassets */,
 				AFB112E31E4752A800F7795C /* Supporting Files */,
 			);
@@ -167,7 +179,6 @@
 				AFB112DC1E47526000F7795C /* LaunchScreen.storyboard in Resources */,
 				AFB112E51E4758EF00F7795C /* GoogleService-Info.plist in Resources */,
 				AFB112D91E47526000F7795C /* Assets.xcassets in Resources */,
-				AFB112D71E47526000F7795C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,23 +237,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB112EF1E47D49600F7795C /* DateExtensions.swift in Sources */,
+				AFB112E91E47BCD900F7795C /* CreateEditMealVC.swift in Sources */,
 				AFB112D41E47526000F7795C /* DayTVC.swift in Sources */,
+				AFB112ED1E47D3EC00F7795C /* Ingredient.swift in Sources */,
+				AFB112EB1E47BD0E00F7795C /* CreateEditMealView.swift in Sources */,
 				AFB112E71E4777D000F7795C /* Meal.swift in Sources */,
 				AFB112D21E47526000F7795C /* AppDelegate.swift in Sources */,
+				AFB112F31E47DE5D00F7795C /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AFB112D51E47526000F7795C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AFB112D61E47526000F7795C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AFB112DA1E47526000F7795C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

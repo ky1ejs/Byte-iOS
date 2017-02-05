@@ -1,4 +1,5 @@
 PODS:
+  - EasyPeasy (1.4.1)
   - Firebase (3.12.0):
     - Firebase/Core (= 3.12.0)
   - Firebase/Auth (3.12.0):
@@ -43,11 +44,13 @@ PODS:
   - GTMSessionFetcher/Core (1.1.8)
 
 DEPENDENCIES:
+  - EasyPeasy
   - Firebase
   - Firebase/Auth
   - Firebase/Database
 
 SPEC CHECKSUMS:
+  EasyPeasy: b8a2feebd47395aaf46bde178abcddd36c922d37
   Firebase: 8e99eb1ff553ad5bcc6072cc3d925bb89c1244d6
   FirebaseAnalytics: 9c67af0ebeb8d2146c9b4ea2616439affa947b58
   FirebaseAuth: b436e4ecebe068bf8e8c6e4e29de5756ffe7ee24
@@ -59,6 +62,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
 
-PODFILE CHECKSUM: f51e0d8dc8401290c3a9afdbea337854db4e3ec6
+PODFILE CHECKSUM: a6cecb3a93bddf159edb2c8b2ecd0b39543e1f46
 
 COCOAPODS: 1.2.0

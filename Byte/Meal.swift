@@ -10,7 +10,20 @@ import Foundation
 import FirebaseDatabase
 
 struct Meal {
+    let date: Date
     let ingredients: [Ingredient]
+    
+    var json: JSON {
+        return [
+            "date"          : date.jsonString,
+            "ingredients"   : ingredients.map() { $0.uid }
+        ]
+    }
+    
+    init(date: Date, ingredients: [Ingredient]) {
+        self.date = date
+        self.ingredients = ingredients
+    }
     
     init?(snapshot: FIRDataSnapshot) {
         guard let dict = snapshot.value as? NSDictionary else { return nil }
@@ -18,15 +31,10 @@ struct Meal {
     }
     
     init?(dictionary: NSDictionary) {
-        guard let ingredients = dictionary["ingredients"] as? [String : String] else { return nil }
-        self.ingredients = ingredients.values.map(Ingredient.init)
+        guard let date = Date(jsonString: dictionary["date"] as? String ?? "") else { return nil }
+        guard let ingredients = dictionary["ingredients"] as? [AnyHashable : JSON] else { return nil }
+        self.date = date
+        self.ingredients = ingredients.values.flatMap(Ingredient.init)
     }
 }
 
-struct Ingredient {
-    let name: String
-    
-    init(_ name: String) {
-        self.name = name
-    }
-}

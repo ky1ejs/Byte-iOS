@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRDatabase.database().persistenceEnabled = true
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UIStoryboard(name: "Main", bundle: .main).instantiateInitialViewController()
+        window?.rootViewController = UINavigationController(rootViewController: DayTVC())
         window?.makeKeyAndVisible()
         
         return true

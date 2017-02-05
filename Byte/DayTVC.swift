@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import FirebaseDatabase
 
 class DayTVC: UITableViewController {
@@ -23,17 +24,26 @@ class DayTVC: UITableViewController {
     }
     
     func initialise() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addMeal))
         fetchMeals()
     }
     
     func fetchMeals() {
-        FIRDatabase.database().reference().child("meals").observe(.value, with: { snapshot in
+        guard let uid = FIRAuth.auth()?.currentUser?.uid else { return }
+        FIRDatabase.database().reference().child("users/\(uid)/meals").observe(.value, with: { snapshot in
             guard let meals = snapshot.value as? [String : NSDictionary] else { return }
             self.meals = meals.values.flatMap(Meal.init)
             self.tableView.reloadData()
         })
     }
     
+    func addMeal() {
+        present(CreateEditMealVC(), animated: true, completion: nil)
+    }
+}
+
+
+extension DayTVC {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return meals.count
     }
